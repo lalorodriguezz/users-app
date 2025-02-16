@@ -1,50 +1,23 @@
-# React + TypeScript + Vite
+Cliente JSONPlaceholder con React + TypeScript + Vite + TailwindCSS + shadcn/ui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web moderna que consume la API de JSONPlaceholder, utilizando un stack tecnológico actualizado para desarrollo rápido y eficiente.
 
-Currently, two official plugins are available:
+Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: Biblioteca de JavaScript para construir interfaces de usuario.
 
-## Expanding the ESLint configuration
+TypeScript: Superconjunto de JavaScript que añade tipado estático.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Vite: Herramienta de construcción rápida para proyectos web modernos.
 
-- Configure the top-level `parserOptions` property like this:
+TailwindCSS: Framework de CSS de utilidad primero para un diseño eficiente.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+shadcn/ui: Componentes de interfaz accesibles y altamente personalizables.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Características
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Consumo de datos desde la API de JSONPlaceholder (posts, usuarios, comentarios).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Interfaz moderna y responsiva con diseño basado en TailwindCSS.
+
+Arquitectura basada en componentes para reusabilidad y mantenimiento.
